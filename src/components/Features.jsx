@@ -1,5 +1,5 @@
-import {  Element, Link as LinkScroll } from "react-scroll";
-import { features } from "../constants";
+import { Element, Link as LinkScroll } from "react-scroll";
+import { details, features } from "../constants";
 import Button from "./layout/Button";
 
 const Features = () => {
@@ -27,11 +27,31 @@ const Features = () => {
                 </div>
                 {/* text area  */}
                 <p className="caption mb-5 max-md:mb-6">{caption}</p>
-                <h2 className=" max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5">{title}</h2> 
+                <h2 className=" max-w-400 mb-7 h3 text-p4 max-md:mb-6 max-md:h5">
+                  {title}
+                </h2>
                 <p className="mb-11 body-1 max-md:mb-8 max-md:body-3">{text}</p>
                 <Button icon={button.icon}>{button.title}</Button>
               </div>
             ))}
+
+            {/* details features  */}
+            <ul className="relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden">
+              {/* line horizontal  */}
+              <div className="absolute bg-s3/20 top-[38%] left-0 ring-0 w-full h-[1px] z-10" />
+              {details.map(({ id, title, icon }) => (
+                <li key={id} className="relative pt-16 px-4 pb-14">
+                  {/* line vertical */}
+                  <div className="absolute top-8 bottom-0 left-1/2 bg-s3/20 w-[1px] z-10" />
+
+                  <div className="flex items-center justify-center mx-auto border-2 border-s2 rounded-full hover:border-s4 transition-all duration-300 shadow-500 size-20">
+                    <img src={icon} alt={title} className="relative size-17/20 object-contain z-20" />
+                  </div>
+
+                  <h3 className="relative z-2 max-w-36 mx-auto my-0 base-small text-center uppercase">{title}</h3>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </Element>
