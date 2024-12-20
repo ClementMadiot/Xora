@@ -1,12 +1,11 @@
-import React from 'react'
+import Header from "./components/Header";
 
 const App = () => {
   return (
-    <div>
-      <h1 className='text-3xl font-bold'>Test</h1>
-      <image src="../public/images/bg-outlines-fill.png" />
-    </div>
-  )
-}
+    <main className="overflow-hidden">
+      <Header />
+    </main>
+  );
+};
 
-export default App
+export default App;
