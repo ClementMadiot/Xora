@@ -23,10 +23,16 @@ const Button = ({
             className="size-10 mr-5 object-contain z-10"
           />
         )}
+        {/* Text  */}
         <span className="relative z-2 font-poppins base-bold text-p1 uppercase">{children}</span>
       </span>
-    </>
-  );
+
+      {/* Effect on hover  */}
+      <span className="glow-before glow-after" />
+    </> 
+  )
+
+
   return href ? (
     <a
       className={clsx(
