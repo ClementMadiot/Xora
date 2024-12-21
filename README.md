@@ -21,10 +21,15 @@
 
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
 
+-[clsx](https://www.npmjs.com/package/clsx)
+It's a tiny (229B) utility for constructing className strings conditionally.
+
 - [react-scroll](https://www.npmjs.com/package/react-scroll)
 It's a lightweight library for enhancing scrolling functionality in React applications. Whether you're building a single-page application
 
--[clsx](https://www.npmjs.com/package/clsx)
+-[React-CountUp](https://www.npmjs.com/package/react-countup)
+It's a React component that can be used to create animations that display numerical data in a more interesting way.
+
 
 ## <br /> <a name="launch-app">🚀 Launch App</a>
 

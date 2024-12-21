@@ -1,13 +1,15 @@
 import clsx from "clsx";
 import { useState } from "react";
-import { Element, Link as LinkScroll } from "react-scroll";
+import { Element } from "react-scroll";
+import CountUp from "react-countup";
 import { plans } from "../constants";
+import Button from "./layout/Button";
 
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
   return (
     <section>
-      <Element name="pricing" className="">
+      <Element name="pricing">
         <div className="container">
           <div className="max-w-960 pricing-head_before relative mx-auto border-l border-r border-s2 bg-s1/50 pb-40 pt-28 max-xl:max-w-4xl max-lg:border-none max-md:pb-32 max-md:pt-16">
             <h3 className="h3 max-lg:h4 max-md:h5 z-3 relative mx-auto mb-14 max-w-lg text-center text-p4 max-md:mb-11 max-sm:max-w-sm">
@@ -80,7 +82,7 @@ const Pricing = () => {
                     )}
                   />
                 </div>
-                {/* title pricing card  */}
+                {/* title + price pricing card  */}
                 <div
                   className={clsx(
                     "relative flex flex-col items-center",
@@ -95,7 +97,63 @@ const Pricing = () => {
                   >
                     {plan.title}
                   </div>
+                  {/* price pricing card */}
+                  <div className="relative z-2 flex items-center justify-center">
+                    <div
+                      className={clsx(
+                        "h-num flex items-start",
+                        index === 1 ? "text-p3" : "text-p4"
+                      )}
+                    >
+                      ${" "}
+                      <CountUp
+                        start={plan.priceMonthly}
+                        end={monthly ? plan.priceMonthly : plan.priceYearly}
+                        duration={0.4}
+                        useEasing={false}
+                        preserveValue
+                      />
+                    </div>
+                    <div className="small-1 relative top-3 ml-1 uppercase">
+                      / mo
+                    </div>
+                  </div>
                 </div>
+                {/* features pricing card */}
+                <div
+                  className={clsx(
+                    "body-1 relative z-2 mb-10 w-full border-b-s2 pb-9 text-center text-p4",
+                    index === 1 && "border-b"
+                  )}
+                >
+                  {plan.caption}
+                </div>
+                {/* list features pricing card */}
+                <ul className="mx-auto space-y-4 xl:px-7">
+                  {plan.features.map((feature) => (
+                    <li
+                      key={feature}
+                      className="relative flex items-center gap-5"
+                    >
+                      <img
+                        src="/public/images/check.png"
+                        alt="check"
+                        className="size-10 object-contain"
+                      />
+                      <p className="flex-1">{feature}</p>
+                    </li>
+                  ))}
+                </ul>
+                {/* Buttons pricing card  */}
+                <div className="mt-10 flex w-full justify-center">
+                  <Button icon={plan.icon}>Get Started</Button>
+                </div>
+
+                {index === 1 && (
+                  <p className="small-compact mt-9 text-center text-p3 before:content-['-'] before:mx-2.5 after:mx-2.5 after:content-['-'] ">
+                    Limited time offer
+                  </p>
+                )}
               </div>
             ))}
           </div>
