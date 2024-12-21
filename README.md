@@ -30,6 +30,8 @@ It's a lightweight library for enhancing scrolling functionality in React applic
 -[React-CountUp](https://www.npmjs.com/package/react-countup)
 It's a React component that can be used to create animations that display numerical data in a more interesting way.
 
+- [react-slidedown](https://www.npmjs.com/package/react-slidedown)
+It's a simple and easy-to-use React component that allows you to create slide-down animations for your web applications.
 
 ## <br /> <a name="launch-app">🚀 Launch App</a>
 
