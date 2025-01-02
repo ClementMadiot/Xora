@@ -29,7 +29,7 @@ It's a tiny (229B) utility for constructing className strings conditionally.
 - [react-scroll](https://www.npmjs.com/package/react-scroll)
 It's a lightweight library for enhancing scrolling functionality in React applications. Whether you're building a single-page application
 
--[React-CountUp](https://www.npmjs.com/package/react-countup)
+- [React-CountUp](https://www.npmjs.com/package/react-countup)
 It's a React component that can be used to create animations that display numerical data in a more interesting way.
 
 - [react-slidedown](https://www.npmjs.com/package/react-slidedown)
