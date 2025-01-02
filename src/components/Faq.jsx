@@ -4,7 +4,7 @@ import FaqItem from "./layout/FaqItem";
 
 const Faq = () => {
   const halflength = Math.floor(faq.length / 2);
-  
+
   return (
     <section>
       <Element name="faq" className="relative">
@@ -36,12 +36,21 @@ const Faq = () => {
               />
             </div>
 
+            {/* faq columns  */}
             <div className="relative flex-1 pt-24">
               {faq.slice(0, halflength).map((item, index) => (
                 <FaqItem key={item.id} index={index} item={item} />
               ))}
             </div>
-          </div> 
+            <div className="relative flex-1 lg:pt-24">
+              {faq.slice(halflength).map((item, index) => (
+                <FaqItem key={item.id} index={halflength + index} item={item} />
+              ))}
+            </div>
+
+            {/* vetical line */}
+            <div className="faq-line_after absolute w-0.5 h-full left-[calc(50%-1px)] top-0 -z-1 bg-s2 max-lg:hidden" />
+          </div>
         </div>
       </Element>
     </section>
