@@ -4,6 +4,7 @@ import { Element } from "react-scroll";
 import CountUp from "react-countup";
 import { plans } from "../constants";
 import Button from "./layout/Button";
+import { bgOutlines, Check } from "../../public/images/index";
 
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
@@ -47,8 +48,8 @@ const Pricing = () => {
                 className="relative z-2"
               />
               <img
-                src="/public/images/bg-outlines-fill.png"
-                alt="outline-background"
+                src={bgOutlines}
+                alt="outline-background-fill"
                 width={960}
                 height={380}
                 className="absolute inset-0 opacity-5 mix-blend-soft-light"
@@ -136,7 +137,7 @@ const Pricing = () => {
                       className="relative flex items-center gap-5"
                     >
                       <img
-                        src="/public/images/check.png"
+                        src={Check}
                         alt="check"
                         className="size-10 object-contain"
                       />

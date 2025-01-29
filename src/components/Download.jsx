@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import { links, logos } from "../constants";
 import Marker from "./layout/Marker";
+import { Line, ScreenXora, Xora } from "../../public/images/index";
 
 const Download = () => {
   return (
@@ -15,7 +16,7 @@ const Download = () => {
               {/* logo  */}
               <div className="mb-10">
                 <img
-                  src="/public/images/xora.svg"
+                  src={Xora}
                   width={160}
                   height={55}
                   alt="xora"
@@ -41,7 +42,7 @@ const Download = () => {
                         <Marker />
                       </span>
                       <img
-                        src="/public/images/lines.svg"
+                        src={Line}
                         alt="line"
                         className="absolute size-13/20 object-contain"
                       />
@@ -62,7 +63,7 @@ const Download = () => {
                   <span className="download_preview-dot left-16 bg-p1/15" />
 
                   <img
-                    src="/public/images/screen.jpg"
+                    src={ScreenXora}
                     alt="screen Xora"
                     width={855}
                     height={655}

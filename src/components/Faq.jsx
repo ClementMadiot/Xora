@@ -1,6 +1,7 @@
 import { Element } from "react-scroll";
 import { faq } from "../constants";
 import FaqItem from "./layout/FaqItem";
+import { FaqLogo } from "../../public/images";
 
 const Faq = () => {
   const halflength = Math.floor(faq.length / 2);
@@ -30,8 +31,8 @@ const Faq = () => {
             {/* Cercle + logo  */}
             <div className="rounded-half absolute -top-10 left-[calc(50%-40px)] z-4 flex size-20 items-center justify-center border-2 border-s2 bg-s1">
               <img
-                src="/public/images/faq-logo.svg"
-                alt="logo"
+                src={FaqLogo}
+                alt="FAQ logo"
                 className="size-1/2"
               />
             </div>

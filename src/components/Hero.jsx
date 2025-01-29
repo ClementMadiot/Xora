@@ -1,6 +1,7 @@
 import { Element, Link as LinkScroll } from "react-scroll";
 import Button from "./layout/Button";
-import zapIcon from '../../public/images/zap.svg';
+import { zapIcon } from "../../public/images/index";
+
 
 const Hero = () => {
   return (

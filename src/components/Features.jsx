@@ -1,4 +1,4 @@
-import { Element, Link as LinkScroll } from "react-scroll";
+import { Element, Link } from "react-scroll";
 import { details, features } from "../constants";
 import Button from "./layout/Button";
 
