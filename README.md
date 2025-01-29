@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="" target="_blanck"><img src="./public/images/xora-screen.png" alt="Xora"></a>
+  <a href="https://xora-cm.netlify.app/" target="_blanck"><img src="./public/images/xora-screen.png" alt="Xora"></a>
    <div align="center"></div>
   <h3 align="center">Xora | SaaS landing page</h3>
 </div>

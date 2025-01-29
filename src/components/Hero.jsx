@@ -1,5 +1,6 @@
 import { Element, Link as LinkScroll } from "react-scroll";
 import Button from "./layout/Button";
+import zapIcon from '../../public/images/zap.svg';
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
               learn, and surprisingly powerful.
             </p>
             <LinkScroll to="features" offset={-100} spy smooth className="">
-              <Button icon={"/public/images/zap.svg"}>Try it now</Button>
+              <Button icon={zapIcon}>Try it now</Button>
             </LinkScroll>
           </div>
 
