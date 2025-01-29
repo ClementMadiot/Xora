@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 import CountUp from "react-countup";
 import { plans } from "../constants";
 import Button from "./layout/Button";
-import { bgOutlines, Check } from "../../public/images/index";
+import { bgOutlines, Check, OutlineBg } from "../../public/images/index";
 
 const Pricing = () => {
   const [monthly, setMonthly] = useState(false);
@@ -41,7 +41,7 @@ const Pricing = () => {
             {/* pricing background   */}
             <div className="pricing-bg">
               <img
-                src="/public/images/bg-outlines.svg"
+                src={OutlineBg}
                 alt="outline-background"
                 width={960}
                 height={380}

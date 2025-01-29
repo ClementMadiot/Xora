@@ -10,6 +10,7 @@ import Hexagon from './hexagon.svg'
 import Magic from './magic.svg'
 import MagicTouch from './magictouch.svg'
 import Triangle from './triangle.svg'
+import OutlineBg from './bg-outlines.svg'
 //========= png =========//
 import bgOutlines from './bg-outlines-fill.png'
 import Check from './check.png'
@@ -27,4 +28,4 @@ import plan3 from './plan-3.png'
 import screen from './screen.jpg'
 
 
-export { zapIcon, bgOutlines, Check, FaqLogo, Xora, ScreenXora, Line, Circle, detail1, detail2, detail3, detail4, feature1, feature2, hero, plan1, plan2, plan3, screen, Close, Docs, Hexagon, Magic, MagicTouch, Triangle }
+export { zapIcon, bgOutlines, Check, FaqLogo, Xora, ScreenXora, Line, Circle, detail1, detail2, detail3, detail4, feature1, feature2, hero, plan1, plan2, plan3, screen, Close, Docs, Hexagon, Magic, MagicTouch, Triangle, OutlineBg }
