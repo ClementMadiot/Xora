@@ -2,6 +2,11 @@
   <a href="https://xora-cm.netlify.app/" target="_blanck"><img src="./public/images/xora-screen.png" alt="Xora"></a>
    <div align="center"></div>
   <h3 align="center">Xora | SaaS landing page</h3>
+  <div align="center">
+    <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
+    <img src="https://img.shields.io/badge/-Vite-black?style=for-the-badge&logoColor=white&logo=vite&color=646CFF" alt="vite" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+  </div>
 </div>
 
 ## <br /> 📋 <a name="table">Summary</a>
@@ -22,6 +27,7 @@
 ## <br /> <a name="tech-stack">🛠 Technology Used</a>
 
 - [TailwindCSS](https://tailwindcss.com/docs/installation)
+TailwindCSS is a valuable tool for developers who want to build modern, responsive, and visually appealing websites without sacrificing development speed.
 
 - [clsx](https://www.npmjs.com/package/clsx)
 It's a tiny (229B) utility for constructing className strings conditionally.
